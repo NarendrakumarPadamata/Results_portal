@@ -1,6 +1,10 @@
 /* ===============================
-   GLOBAL STYLES
+   GLOBAL
 =================================*/
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -9,21 +13,22 @@ body {
 }
 
 /* ===============================
-   HEADER SECTION
+   HEADER
 =================================*/
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
-    background-color: #ffffff;
     gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap; /* allows stacking on mobile */
 }
 
 .logo {
-    width: 120px;
-    height: auto;
+    width: 100px;
+    max-width: 100%;
 }
 
 .title-section {
@@ -31,15 +36,14 @@ body {
 }
 
 .title-section h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin: 0;
-    letter-spacing: 2px;
     font-weight: 600;
 }
 
 .title-section h2 {
-    font-size: 28px;
-    margin: 10px 0 0 0;
+    font-size: 24px;
+    margin-top: 8px;
     font-weight: 500;
 }
 
@@ -50,18 +54,19 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    padding: 20px;
 }
 
 /* ===============================
-   CARD DESIGN
+   CARD
 =================================*/
 
 .card {
     background: linear-gradient(145deg, #0f172a, #1e293b);
-    padding: 30px;
+    padding: 25px;
     border-radius: 12px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* prevents overflow */
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -71,7 +76,7 @@ body {
 
 .card label {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
     display: block;
 }
@@ -80,14 +85,14 @@ body {
 .card input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border-radius: 6px;
     border: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* ===============================
-   BUTTON STYLE
+   BUTTON
 =================================*/
 
 .card button {
@@ -95,7 +100,7 @@ body {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     cursor: pointer;
     background: linear-gradient(to right, #4f8df5, #2563eb);
@@ -111,19 +116,20 @@ body {
 =================================*/
 
 #resultSection {
-    width: 80%;
-    margin: 40px auto;
+    padding: 20px;
+    overflow-x: auto; /* table scroll on small screen */
 }
 
 #resultSection table {
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
+    min-width: 500px; /* keeps table readable */
 }
 
 #resultSection th,
 #resultSection td {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     text-align: left;
 }
@@ -134,7 +140,7 @@ body {
 }
 
 /* ===============================
-   SUMMARY BOX
+   SUMMARY
 =================================*/
 
 .summary {
@@ -146,24 +152,24 @@ body {
 }
 
 /* ===============================
-   RESPONSIVE
+   MOBILE OPTIMIZATION
 =================================*/
 
 @media (max-width: 768px) {
 
-    .header {
-        flex-direction: column;
-    }
-
     .title-section h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .title-section h2 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 80px;
     }
 
     .card {
-        width: 90%;
+        padding: 20px;
     }
 }
