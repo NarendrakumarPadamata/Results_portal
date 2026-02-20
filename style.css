@@ -1,0 +1,169 @@
+/* ===============================
+   GLOBAL STYLES
+=================================*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+
+/* ===============================
+   HEADER SECTION
+=================================*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    gap: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.title-section h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.title-section h2 {
+    font-size: 28px;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+}
+
+/* ===============================
+   MAIN CONTAINER
+=================================*/
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* ===============================
+   CARD DESIGN
+=================================*/
+
+.card {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===============================
+   FORM ELEMENTS
+=================================*/
+
+.card label {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card select,
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+}
+
+/* ===============================
+   BUTTON STYLE
+=================================*/
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #4f8df5, #2563eb);
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: linear-gradient(to right, #2563eb, #1e40af);
+}
+
+/* ===============================
+   RESULT SECTION
+=================================*/
+
+#resultSection {
+    width: 80%;
+    margin: 40px auto;
+}
+
+#resultSection table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+#resultSection th,
+#resultSection td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#resultSection th {
+    background-color: #1e293b;
+    color: white;
+}
+
+/* ===============================
+   SUMMARY BOX
+=================================*/
+
+.summary {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .title-section h1 {
+        font-size: 22px;
+    }
+
+    .title-section h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

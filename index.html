@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECET Results Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="logo.png" alt="College Logo" class="logo">
+        <div class="title-section">
+            <h1>ELURU COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+            <h2>RESULTS PORTAL</h2>
+        </div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="main-container">
+        <div class="card">
+
+            <label>Select Batch</label>
+            <select id="batchSelect">
+                <option value="">Select Batch</option>
+                <option>20JD</option>
+                <option>21JD</option>
+                <option>22JD</option>
+                <option>23JD</option>
+                <option>24JD</option>
+                <option>25JD</option>
+            </select>
+
+            <label>Select Semester</label>
+            <select id="semesterSelect">
+                <option value="">Select Semester</option>
+                <option>1-1</option>
+                <option>1-2</option>
+                <option>2-1</option>
+                <option>2-2</option>
+                <option>3-1</option>
+                <option>3-2</option>
+                <option>4-1</option>
+                <option>4-2</option>
+                <option value="ALL">All Semesters</option>
+            </select>
+
+            <label>Enter Hall Ticket</label>
+            <input type="text" id="hallticketInput" placeholder="23JD1A4582">
+
+            <button onclick="getResult()">Get Result</button>
+
+        </div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
