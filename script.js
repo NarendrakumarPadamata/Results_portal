@@ -7,11 +7,11 @@ let studentDatabase = {};
 // DEFINE CSV FILES HERE
 // =====================================
 const csvFiles = [
-    "data/1-1_REG_NOV_2025.csv",
-    "data/1-2_REG_APR_2026.csv",
-    "data/2-1_REG_NOV_2025.csv",
-    "data/2-2_REG_APR_2027.csv",
-    "data/3-1_REG_NOV_2027.csv"
+    "1-1_REG_NOV_2025.csv",
+    "1-2_REG_APR_2026.csv",
+    "2-1_REG_NOV_2025.csv",
+    "2-2_REG_APR_2027.csv",
+    "3-1_REG_NOV_2027.csv"
 ];
 
 // =====================================
@@ -253,3 +253,4 @@ function getResult() {
 
     newTab.document.close();
 }
+
